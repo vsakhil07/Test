@@ -615,12 +615,9 @@
 
     // default example
     simplyCountdown('.simply-countdown-one', {
-      	year: 2023,
-    	month: 5,
-    	day: 21,
-    	hours: 12,
-     	minutes: 57,
-     	seconds: 0,
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
     });
 
     //jQuery example
