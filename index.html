@@ -613,13 +613,20 @@
 	<script>
     var d = new Date(new Date().getTime());
 	simplyCountdown('.simply-countdown-one', {
-   		year: 2023,
-    		month: 5,
-    		day: 21,
-    		hours: 11,
-     		minutes: 57,
-     		seconds: 0,
-	});
+    	year: 2023,
+    	month: 5,
+    	day: 21,
+    	hours: 11,
+     	minutes: 57,
+     	seconds: 0,
+});
+
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
 </script>
 
 	</body>
