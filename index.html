@@ -612,12 +612,10 @@
 
 	<script>
     var d = new Date(new Date().getTime());
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
+    simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
         month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
+        day: d.getDate()
     });
 </script>
 
